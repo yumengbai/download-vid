@@ -1,0 +1,10 @@
+import wget
+print('输入你的链接吧！吼吼吼')
+x=input()
+urls=x.split(',')
+index=1
+for url in urls:
+    print(url)
+    print('ok')
+    wget.download(url,out='/Users/alpha/Desktop/project/py/download/'+str(index)+'.mp4')
+    index=index+1
